@@ -1,6 +1,6 @@
 package com.luv2code.cruddemo.service;
 
-import com.luv2code.cruddemo.EmployeeRepository;
+import com.luv2code.cruddemo.dao.EmployeeRepository;
 import com.luv2code.cruddemo.entity.Employee;
 import org.springframework.stereotype.Service;
 
