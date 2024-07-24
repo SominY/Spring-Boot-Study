@@ -10,17 +10,12 @@ import java.util.List;
 public class Instructor {
 
     // annotate the class as an entity and map to db table
-
     // define the fields
-
     // annotate the fields with db column names
-
     // ** set up mapping to InstructorDetail entity
 
     // create constructors
-
     // generate getter/setter methods
-
     // generate toString() method
 
     @Id
@@ -42,6 +37,7 @@ public class Instructor {
     private InstructorDetail instructorDetail;
 
     @OneToMany(mappedBy = "instructor",
+               fetch = FetchType.LAZY,
                cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     private List<Course> courses;
 
